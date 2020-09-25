@@ -1,0 +1,65 @@
+Metodologia
+1 - Coleta de Dados Técnicos
+	1.1 - pegar ip: python getip.py
+	1.2 - Emails - hunter.io
+	1.3 - DNSDumpster
+	1.4 - site:trello.com
+	1.5 - Github
+	1.6 - site:pastebin.com 
+	1.7 - Linkedin - vagas
+	1.8 - wafw00f ""site.com""
+	1.9 - theHarvester -d ""site.com"" -b ""base de busca""
+	1.10 - gobuster dir -e -u ""site.com/""
+		1.10.1- -w "diretorio da wordlists"
+		1.10.2- -a "useragent"
+		1.10.3- -x ".txt" (formatos dos arquivos)
+	1.11 - dirb ""https://site.com/"" ""diretorio da wordlist"" -a ""useragent""
+	1.12 - whatweb ""site.com""
+	1.13 - whois
+	1.14 - shodan
+	1.15 - censys
+	1.16 - Análise vazamento:
+		1.15.1 - pwndb2am4tzkvold.onion
+		1.15.2 - hackinf2twywv6pv.onion
+		1.15.3 - hxt254aygrsziejn.onion
+	1.17 - checagem de roubo de email: emkei.cz
+	1.18 - Captura de serviço de email: envio de email errado qualquer para voltar e ver dados
+	1.19 - pesquisa de ip reverso: for ip in $(seq 1 255); do host ""IP da página"".$ip;done
+	1.20 - pesquisa zona: for dns in $(host -t ns ""site"" | cut -d " " -f 4;do host 0l ""site" $dns;done
+	1.21 - curl -v -X OPTIONS ""IP do site/diretorios""
+	1.22 - Nmap para ver portas
+	1.23 - Metasploit: db_nmap -v ""IP"" -Pn
+	1.24 - google "index of/" "/robots.txt"
+	1.25 - xsstryke.py -u "site.com/algo.php" --params
+	1.26 - SNMP: onesixtyone -c /usr/share/wordlists/seclists/Discovery/SNMP/common-snmp-community-strings.txt  ""IP""
+	1.27 - SNMP: snmpwalk -c ""comunity"" ""IP"" ou snmp-check ""IP"" -c ""community""
+	1.27 - NFS scan: rpcinfo -p ""IP""
+	1.28 - NFS scan: showmount -e ""IP""
+	
+	
+2 - Coleta de Dados Pessoais
+	2.1 - Linkedin
+	2.2 - Facebook
+	2.3 - instagram
+	2.4 - google
+	2.5 - Zoominfo.com
+
+
+3 - Ataques
+	3.1 - nc -v ""ip do site"" ""porta"" -C
+		3.1.1 - utilização dos serviços aceitos pegos pelo curl
+	3.2 -  Ataques via metasploit
+	3.3 - Anaálise da fonte da página
+	3.4 - Ataque SQL (' \) (sqlmap -u ""site.com.br"")
+	3.5 - ataques js
+	3.6 - Comand injection:	 whois (manipulação) ;echo oi | grep "nserver"
+	3.7 - Força Bruta logins: hydra -v -L ""diretorio dos usuarios"" -P ""diretorio das senhas"" ""ip do site"" http-post-form ""/aonde inserir login""login=^USER^&senha=^PASS^$""filtro(Login:Incorreto ex)""
+	3.8 - Envio de arquivos
+	3.9 - Joomla joomscan -g ""site""
+	3.10 - wpscan --url ""site"" --api-token 
+	3.11 - gophish
+	
+	
+4. Pós
+	4.1 - Relatório
+	4.2 - Nivel de vulnerabilidade: https://www.first.org/cvss/calculator/3.1

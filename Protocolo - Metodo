@@ -1,0 +1,107 @@
+I - Coleta de Informação
+	1 - Busca profunda
+		1.1 - Geral (Google, facebook, linkedin, jusbrasil, etc)
+		1.2 - Análise por vagas de emprego
+		1.3 - Análise webarchive
+		1.4 - Coleta de emails (hunter.io)
+		1.5 - Análise Dados (Trello, github)
+		1.5 - Análise vazamento (deepweb, pastebin, etc)
+			1.5.1 - pwndb2am4tzkvold.onion
+			1.5.2 - hackinf2twywv6pv.onion
+			1.5.3 - hxt254aygrsziejn.onion
+		1.6 - Google e Bing Hacking
+		1.7 - Checagem roubo de email
+		1.8 - Análise Metadados (The harvester, etc)
+
+
+	2 - Infra
+		2.1 - Shodan
+		2.2 - Censys
+		2.3 - whois
+		2.4 - rdap / arin / BGP
+		2.5 - subdomain takeover
+		2.6 - dns dumpster
+		2.7 - Securitytrails
+		2.8 - analise de Certificado/transparency report
+
+		
+	3 - web
+		3.1 - webrecon.sh
+		3.2 - dirb
+		3.3 - whatweb
+		3.4 - subtakover.sh
+		3.5 - cannon.sh
+		3.6 - desocultador
+		3.7 - reverso.sh
+
+
+
+
+II -  Varreduras
+	4 - Codigo
+		4.1- Analise de codigo fonte
+
+
+	5 - Análise de Host
+		5.1 - Nmap
+			5.1.1 - Padrão simples
+			5.1.2 - Furtivo, decoy, etc
+		5.2 - scapyping.py
+		5.3 - scapyscan.py
+		5.4 - Analíse das portas
+		5.5 - cewl
+		5.6 - gobuster
+
+
+	6 - Conversa com servidor
+		6.1 - wafw00f (detecção de firewall)
+		6.3 - checagem de FTP (anonymous,ft)
+		6.3 - tentativa de conectar ao servidor (wget,ncat, etc)
+		6.4 - exploração de vulnerabilidades (shodan, censys, exploit-DB)
+		6.5 - Nbtscan, smbclient, rpcclient, enum4linux
+		6.6 - telnet (busca de credenciais e etc)
+		6.7 - smptbrute
+		6.8 - onesixtyone
+		6.9 - snmpwalk, snmptranslate, snmp-check
+
+
+	7 - Conversa com email
+		7.1 - telnet (IMAP, POP3)
+
+
+
+
+III - Análise de Vulnerabilidade
+	8 - Vulnerabilidades profundas
+		8.1 - Montagem de Mapa
+			8.1.1 - Identificar SO
+			8.1.2 - Identificar possível versão dos softwares / aplicação / sistemas
+			8.1.3 - Buscar Vulnerabilidades conhecidas
+			8.1.4 - Buscar vulnerabilidades não-conhecidas
+			8.1.5 - Tentar ataques
+			8.1.6 - Enumeração NFS
+
+		8.2 - Busca a Bancos de Dados de vulnerabilidades
+			8.2.1 - exploit-DB
+			8.2.2 - securityfocus.com/vulnerabilities
+			8.2.3 - cvedetails
+			8.2.4 - nvd.nist.gov
+			8.2.5 - rapid7.com/db
+			8.2.6 - packetstormsecurity.com/files/tags/exploit
+			8.2.7 - searchsploit
+			
+		8.3 -Scanners
+			8.3.1 - Uso da plataforma Nessus (se possível)
+			8.3.2 - consulta ao OpenVAS
+			8.3.3 - crackmapexec
+				8.3.3.1 smb
+				8.3.3.2 mssql
+				8.3.3.3 ssh
+				8.3.3.4 windrn
+IV - Ataques
+	9 - Força Bruta
+		9.1 - Metasploit (msfconsole)
+		9.2 - msfvenon
+		9.3 - busca e análise de hashes (john)
+		9.4 - Responder
+		
